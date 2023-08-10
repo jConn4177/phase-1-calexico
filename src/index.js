@@ -21,7 +21,7 @@ getJSON(url + "/menu").then((dishes) => {
   dishes.forEach(renderMenu);
   renderDishDetails(dishes[0]);
   dishList = dishes;
-  updateCartTotal();
+  //   updateCartTotal();
 });
 
 //* Render Functions
@@ -64,7 +64,8 @@ cartForm.addEventListener("submit", (e) => {
   const currentValue = currentDish.number_in_bag;
   currentDish.number_in_bag = currentValue + inputValue;
   numberInCart.textContent = currentDish.number_in_bag;
-  updateCartTotal();
+  //! updateCartTotal function not working as intended atm
+  //   updateCartTotal();
   //! cartForm.reset not working as expected, currently
   cartForm.reset();
 });
