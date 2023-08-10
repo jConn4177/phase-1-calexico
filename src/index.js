@@ -65,6 +65,7 @@ cartForm.addEventListener("submit", (e) => {
   currentDish.number_in_bag = currentValue + inputValue;
   numberInCart.textContent = currentDish.number_in_bag;
   updateCartTotal();
+  //! cartForm.reset not working as expected, currently
   cartForm.reset();
 });
 
