@@ -1,11 +1,13 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./style.css" />
-        <script defer src="./index.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="./assets/calexico-img-logo.svg"/>
+        <script defer type="text/javascript" src="./src/request_helpers.js"></script>
+        <script defer type="text/javascript" src="./src/index.js"></script>
+
     </head>
     <body>
        <header>
@@ -28,16 +30,17 @@
                     <p id="dish-description"></p>
                     <h3 id="dish-price"></h3>
                 </div>
-                
+
                 <h3>
-                    Number in Cart: 
+                    Number in Cart:
                     <span id="number-in-cart">0</span>
                 </h3>
                 <form id="cart-form">
                     <input id="cart-amount" type="text" placeholder="Number to add..."/>
                     <input type="submit" value="Add to Cart"></input>
                 </form>
-                
+                <h3>Total: $<span id="total"></span></h3>
+
             </section>
         </div>
     </body>
