@@ -47,13 +47,15 @@ const renderDishDetails = (dish) => {
   numberInCart.textContent = dish.number_in_bag;
 };
 
-const updateCartTotal = () => {
-  let total = 0;
-  dishList.forEach((i) => {
-    total += i.price * i.number_in_bag;
-  });
-  totalPrice.textContent = total.toFixed(2);
-};
+//! not working currently
+//! need to update price total without changing i.number_in_bag
+// const updateCartTotal = () => {
+//   let total = 0;
+//   dishList.forEach((i) => {
+//     total += i.price * i.number_in_bag;
+//   });
+//   totalPrice.textContent = total.toFixed(2);
+// };
 
 cartForm.addEventListener("submit", (e) => {
   console.log("submitted");
